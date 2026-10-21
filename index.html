@@ -1,0 +1,584 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://matheusheberle.github.io/">
+      
+      
+      
+        <link rel="next" href="arquitetura/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Documentação equivalêncIA</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Documentação equivalêncIA" class="md-header__button md-logo" aria-label="Documentação equivalêncIA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação equivalêncIA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Documentação equivalêncIA" class="md-nav__button md-logo" aria-label="Documentação equivalêncIA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação equivalêncIA
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Arquitetura
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>Home</h1>
+
+<p>Equipe de desenvolvimento: Matheus José Freitas Heberle, Anderson William Damazio, Matheus Pavlak e Thiago Scharf
+Responsável pela documentação: Matheus José Freitas Heberle
+Disciplina: Laboratório de Software I
+Professor orientador: Luiz Fernando R. da Silva</p>
+<p>Categoria: 01_Requisitos_SRD — Requisitos de Software e Regras de Negócio
+Status: Em desenvolvimento</p>
+<ol>
+<li>Visão geral</li>
+</ol>
+<p>O equivalencIA é um sistema de apoio à análise de equivalência curricular entre instituições de ensino superior.</p>
+<p>O sistema compara disciplinas cursadas pelo estudante com disciplinas da matriz curricular do curso de destino, considerando carga horária, compatibilidade de conteúdo, situação acadêmica e documentos disponíveis para análise.</p>
+<p>O equivalencIA tem caráter de apoio à decisão. Os resultados apresentados pelo sistema devem ser revisados pelo responsável pela análise curricular, que realiza a validação acadêmica final.</p>
+<ol>
+<li>Objetivo</li>
+</ol>
+<p>Esta documentação especifica as principais funcionalidades, regras de negócio e comportamentos relacionados à análise curricular no equivalencIA.</p>
+<p>Os objetivos são:</p>
+<p>registrar os requisitos relacionados à análise curricular;</p>
+<p>padronizar as regras utilizadas no processo;</p>
+<p>orientar o desenvolvimento das funcionalidades;</p>
+<p>apoiar a elaboração dos testes;</p>
+<p>facilitar a manutenção e evolução do sistema.</p>
+<ol>
+<li>Atores</li>
+</ol>
+<p>Ator</p>
+<p>Descrição</p>
+<p>Interação no fluxo documentado</p>
+<p>Responsável pela análise curricular</p>
+<p>Profissional acadêmico autorizado a realizar o processo de aproveitamento de estudos.</p>
+<p>Cadastra ou seleciona o estudante; seleciona o curso e a matriz curricular; informa dados acadêmicos; anexa documentos; realiza a análise curricular; consulta resultados; valida equivalências; gera o documento da análise.</p>
+<p>Estudante</p>
+<p>Beneficiário do processo de aproveitamento de estudos.</p>
+<p>Não interage diretamente com o equivalencIA no fluxo documentado. Seus dados e documentos são informados pelo responsável pela análise curricular.</p>
+<ol>
+<li>Pré-condições</li>
+</ol>
+<p>Antes de iniciar uma análise curricular, as seguintes condições devem ser atendidas:</p>
+<p>o curso de destino deve estar cadastrado;</p>
+<p>a matriz curricular correspondente deve estar disponível;</p>
+<p>o estudante deve estar cadastrado ou ter seus dados informados durante o processo;</p>
+<p>o histórico escolar deve estar disponível;</p>
+<p>o responsável pela análise curricular deve possuir acesso ao sistema.</p>
+<ol>
+<li>Diagrama de Casos de Uso</li>
+</ol>
+<p>O diagrama representa as principais funcionalidades do equivalencIA e a interação do responsável pela análise curricular com o sistema.</p>
+<p>5.1. Notação utilizada</p>
+<p>Notação: UML 2.x — Diagrama de Casos de Uso</p>
+<p>Elemento</p>
+<p>Representação</p>
+<p>Significado</p>
+<p>Ator</p>
+<p>Figura humana</p>
+<p>Entidade externa que interage com o sistema.</p>
+<p>Caso de uso</p>
+<p>Elipse</p>
+<p>Funcionalidade disponibilizada pelo sistema.</p>
+<p>Limite do sistema</p>
+<p>Retângulo</p>
+<p>Delimita as funcionalidades pertencentes ao equivalencIA.</p>
+<p>Associação</p>
+<p>Linha contínua</p>
+<p>Representa a interação entre um ator e um caso de uso.</p>
+<p>&lt;<include>&gt;</p>
+<p>Relação de inclusão</p>
+<p>Representa um comportamento incluído na execução de outro caso de uso.</p>
+<p>5.2. Casos de uso contemplados</p>
+<p>Caso de uso</p>
+<p>Finalidade</p>
+<p>Cadastrar estudante</p>
+<p>Registrar ou selecionar o estudante no processo de análise curricular.</p>
+<p>Selecionar curso e matriz curricular</p>
+<p>Definir o curso de destino e a matriz curricular utilizada na comparação.</p>
+<p>Informar dados acadêmicos</p>
+<p>Registrar as informações acadêmicas necessárias à análise curricular.</p>
+<p>Anexar documentos</p>
+<p>Disponibilizar histórico escolar e planos de ensino, quando houver.</p>
+<p>Realizar análise curricular</p>
+<p>Executar a avaliação das possíveis equivalências.</p>
+<p>Consultar resultado da análise</p>
+<p>Apresentar o resultado da análise curricular ao responsável pela análise curricular.</p>
+<p>Validar equivalências</p>
+<p>Permitir a revisão acadêmica final das possíveis equivalências.</p>
+<p>Gerar documento da análise</p>
+<p>Gerar o documento final da análise curricular.</p>
+<p>Comparar disciplinas</p>
+<p>Comparar disciplina de origem e disciplina de destino.</p>
+<p>Verificar carga horária</p>
+<p>Avaliar se a carga horária da disciplina de origem atende à disciplina de destino.</p>
+<p>Verificar compatibilidade de conteúdo</p>
+<p>Avaliar a compatibilidade entre os conteúdos da disciplina de origem e da disciplina de destino.</p>
+<p>Durante a realização da análise curricular, o sistema inclui as etapas Comparar disciplinas, Verificar carga horária e Verificar compatibilidade de conteúdo, conforme representado pelas relações &lt;<include>&gt; no diagrama.</p>
+<p>5.3. Diagrama</p>
+<ol>
+<li>Regras de negócio</li>
+</ol>
+<p>As regras de negócio definem os critérios utilizados pelo equivalencIA para identificar possíveis equivalências entre disciplinas. Elas orientam a análise curricular, mas não substituem a decisão acadêmica do responsável pela análise curricular.</p>
+<p>6.1. Critérios de equivalência</p>
+<p>Identificação</p>
+<p>Regra de negócio</p>
+<p>RN01</p>
+<p>A carga horária da disciplina de origem deve ser igual ou superior à carga horária da disciplina de destino.</p>
+<p>RN02</p>
+<p>O conteúdo da disciplina de origem deve apresentar aproximadamente 60% de compatibilidade com o conteúdo da disciplina de destino, conforme o critério acadêmico definido para o projeto.</p>
+<p>RN03</p>
+<p>A reprovação em uma disciplina não elimina automaticamente a possibilidade de análise de equivalência. A situação acadêmica deve ser considerada durante a avaliação.</p>
+<p>RN04</p>
+<p>O resultado produzido pelo sistema representa uma possibilidade de equivalência e deve ser revisado pelo responsável pela análise curricular.</p>
+<p>RN05</p>
+<p>O histórico escolar é obrigatório para a realização da análise curricular.</p>
+<p>RN06</p>
+<p>Os planos de ensino são opcionais e podem complementar a análise de compatibilidade dos conteúdos.</p>
+<p>RN07</p>
+<p>O atendimento de apenas um critério não garante a equivalência. A análise deve considerar conjuntamente os critérios definidos para o processo.</p>
+<p>6.2. Documentos necessários</p>
+<p>Documento</p>
+<p>Obrigatoriedade</p>
+<p>Finalidade</p>
+<p>Histórico escolar</p>
+<p>Obrigatório</p>
+<p>Identificar as disciplinas cursadas e suas informações acadêmicas.</p>
+<p>Planos de ensino</p>
+<p>Opcional</p>
+<p>Complementar a análise de compatibilidade dos conteúdos.</p>
+<p>6.3. Exemplo de aplicação</p>
+<p>Considere um estudante que cursou Algoritmos em outra instituição e solicita o aproveitamento da disciplina Pensamento Computacional no curso de destino.</p>
+<p>Critério</p>
+<p>Disciplina de origem</p>
+<p>Disciplina de destino</p>
+<p>Nome</p>
+<p>Algoritmos</p>
+<p>Pensamento Computacional</p>
+<p>Carga horária</p>
+<p>80 horas</p>
+<p>80 horas</p>
+<p>Conteúdo</p>
+<p>Lógica de programação, algoritmos e estruturas condicionais</p>
+<p>Pensamento lógico, algoritmos e resolução de problemas</p>
+<p>Nesse exemplo, a carga horária atende ao critério definido na RN01. A equivalência também depende da compatibilidade entre os conteúdos, conforme a RN02. Portanto, o atendimento de um único critério não determina automaticamente o aproveitamento da disciplina.</p>
+<p>Observação: o processamento automatizado ainda está em desenvolvimento. As regras apresentadas representam os critérios previstos para o funcionamento do equivalencIA.</p>
+<ol>
+<li>Fluxos alternativos</li>
+</ol>
+<p>Situação</p>
+<p>Comportamento esperado</p>
+<p>Histórico escolar não informado</p>
+<p>Impedir o início da análise curricular e solicitar o documento obrigatório.</p>
+<p>Plano de ensino não informado</p>
+<p>Permitir a continuidade da análise curricular, pois o documento é opcional.</p>
+<p>Carga horária insuficiente</p>
+<p>Informar que a disciplina não atende ao critério de carga horária.</p>
+<p>Compatibilidade de conteúdo insuficiente</p>
+<p>Informar que a disciplina não atende ao critério de compatibilidade.</p>
+<p>Dados obrigatórios não preenchidos</p>
+<p>Solicitar o preenchimento dos campos pendentes.</p>
+<p>Nenhuma equivalência identificada</p>
+<p>Informar que não foram encontradas possíveis equivalências para as disciplinas analisadas.</p>
+<p>Possível equivalência identificada</p>
+<p>Apresentar o resultado para revisão do responsável pela análise curricular.</p>
+<p>Os comportamentos descritos representam o funcionamento previsto para o sistema e poderão ser ajustados conforme a implementação e os testes das funcionalidades.</p>
+<ol>
+<li>Fluxo resumido do processo</li>
+</ol>
+<p>Etapa</p>
+<p>Responsável</p>
+<p>Ação</p>
+<p>1</p>
+<p>Responsável pela análise curricular</p>
+<p>Acessa o equivalencIA.</p>
+<p>2</p>
+<p>Responsável pela análise curricular</p>
+<p>Cadastra ou seleciona o estudante.</p>
+<p>3</p>
+<p>Responsável pela análise curricular</p>
+<p>Seleciona o curso e a matriz curricular de destino.</p>
+<p>4</p>
+<p>Responsável pela análise curricular</p>
+<p>Informa os dados acadêmicos.</p>
+<p>5</p>
+<p>Responsável pela análise curricular</p>
+<p>Anexa o histórico escolar.</p>
+<p>6</p>
+<p>Responsável pela análise curricular</p>
+<p>Anexa os planos de ensino, quando disponíveis.</p>
+<p>7</p>
+<p>Responsável pela análise curricular</p>
+<p>Inicia a análise curricular.</p>
+<p>8</p>
+<p>Sistema</p>
+<p>Compara as disciplinas de origem com as disciplinas de destino.</p>
+<p>9</p>
+<p>Sistema</p>
+<p>Verifica a carga horária e a compatibilidade dos conteúdos.</p>
+<p>10</p>
+<p>Sistema</p>
+<p>Apresenta as possíveis equivalências.</p>
+<p>11</p>
+<p>Responsável pela análise curricular</p>
+<p>Revisa e valida os resultados.</p>
+<p>12</p>
+<p>Sistema</p>
+<p>Gera o documento final.</p>
+<ol>
+<li>Arquitetura da informação e classificação</li>
+</ol>
+<p>Categoria da documentação: 01_Requisitos_SRD — Requisitos de Software e Regras de Negócio</p>
+<p>A classificação foi definida porque o documento descreve funcionalidades do sistema, atores, pré-condições, regras de negócio, comportamentos esperados e fluxos alternativos.</p>
+<p>A estrutura de referência da documentação do projeto é:</p>
+<p>equivalencIA/
+├── 00_Rationale/
+├── 01_Requisitos_SRD/
+├── 02_Arquitetura_SAD/
+├── 03_Testes/
+└── 04_Manuais_SD/</p>
+<p>Esta documentação está associada à categoria:</p>
+<p>01_Requisitos_SRD/</p>
+<ol>
+<li>Labels / Tags</li>
+</ol>
+<p>Os seguintes Labels devem ser associados à página no Confluence:</p>
+<p>equivalencIA
+equivalencia-curricular
+requisitos
+regras-de-negocio
+analise-curricular
+casos-de-uso
+uml
+documentacao</p>
+<p>Os Labels permitem classificar a documentação por assunto e facilitar sua localização e rastreabilidade no projeto.</p>
+<ol>
+<li>Status da documentação</li>
+</ol>
+<p>Status: Em desenvolvimento</p>
+<p>Esta documentação representa o comportamento previsto para o equivalencIA e deverá ser atualizada conforme novas funcionalidades sejam implementadas, testadas e validadas pela equipe de desenvolvimento.</p>
+<ol>
+<li>Conclusão</li>
+</ol>
+<p>Esta documentação apresenta os principais elementos relacionados à análise curricular do equivalencIA: atores, funcionalidades, pré-condições, regras de negócio, documentos necessários, fluxos alternativos e fluxo geral do processo.</p>
+<p>O Diagrama de Casos de Uso UML complementa a documentação textual ao representar visualmente a interação entre o responsável pela análise curricular e as funcionalidades do sistema.</p>
+<p>Como o equivalencIA está em desenvolvimento, os requisitos e regras documentados poderão ser revisados conforme a evolução do projeto.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": [], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
