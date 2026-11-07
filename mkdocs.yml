@@ -1,0 +1,23 @@
+site_name: EquivalencIA | Documentação
+site_description: Arquitetura e fluxo de análise de aproveitamento de estudos
+site_author: EquivalencIA
+
+nav:
+  - Arquitetura: index.md
+  - Regra de negócio e fluxo: fluxo.md
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+
+repo_url: ''
+
