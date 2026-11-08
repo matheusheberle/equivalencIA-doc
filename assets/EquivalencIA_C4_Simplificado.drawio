@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="2">
+  <diagram id="contexto" name="Nível 1 - Contexto">
+    <mxGraphModel dx="1418" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title1" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=14;fontColor=#142B4A;" value="&lt;b&gt;C4 MODEL | NÍVEL 1&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:26px&quot;&gt;&lt;b&gt;EquivalencIA - Contexto&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#5B6B7E&quot;&gt;Usuário direto, sistema principal e integração externa.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="1090" x="55" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="coord" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F7F2;strokeColor=#16836B;strokeWidth=2;fontSize=16;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=12;" value="&lt;b&gt;COORDENADOR&lt;/b&gt;&lt;br&gt;&lt;font color=&quot;#5B6B7E&quot;&gt;Pessoa&lt;/font&gt;&lt;br&gt;&lt;br&gt;Informa dados e documentos; revisa e valida os resultados." vertex="1">
+          <mxGeometry height="180" width="260" x="65" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#1769AA;strokeColor=#1769AA;strokeWidth=2;fontSize=18;fontColor=#FFFFFF;align=center;verticalAlign=middle;spacing=14;" value="&lt;b&gt;EquivalencIA&lt;/b&gt;&lt;br&gt;&lt;br&gt;Apoia o aproveitamento de estudos.&lt;br&gt;Compara disciplinas e apresenta possibilidades de equivalência.&lt;br&gt;&lt;br&gt;&lt;b&gt;A decisão acadêmica é do coordenador.&lt;/b&gt;" vertex="1">
+          <mxGeometry height="200" width="320" x="440" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="ai" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F2ECFB;strokeColor=#6941A5;strokeWidth=2;fontSize=16;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=12;" value="&lt;b&gt;SERVIÇO EXTERNO DE IA&lt;/b&gt;&lt;br&gt;&lt;br&gt;Gera sugestões de equivalência.&lt;br&gt;&lt;font color=&quot;#5B6B7E&quot;&gt;Fornecedor/modelo a definir&lt;/font&gt;" vertex="1">
+          <mxGeometry height="160" width="250" x="890" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="studentnote" parent="1" style="rounded=1;arcSize=10;whiteSpace=wrap;html=1;fillColor=#FFF4DF;strokeColor=#E7C98A;fontSize=13;fontColor=#78500D;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;Estudante:&lt;/b&gt; beneficiário do processo; seus dados e documentos são informados pelo coordenador. Não interage diretamente com o sistema." vertex="1">
+          <mxGeometry height="60" width="610" x="295" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="coord" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16836B;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="system" value="Dados e análise">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6941A5;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="ai" value="Critérios e sugestões">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#DCE4ED;fontSize=14;fontColor=#52677E;align=left;spacingLeft=14;" value="&lt;b&gt;LEGENDA&lt;/b&gt;    &lt;font color=&quot;#16836B&quot;&gt;■&lt;/font&gt; Pessoa    &lt;font color=&quot;#1769AA&quot;&gt;■&lt;/font&gt; Sistema em foco    &lt;font color=&quot;#6941A5&quot;&gt;■&lt;/font&gt; Sistema externo    ↔ Relação" vertex="1">
+          <mxGeometry height="45" width="1090" x="55" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="foot1" parent="1" style="text;html=1;whiteSpace=wrap;align=left;fontSize=11;fontColor=#5B6B7E;" value="EquivalencIA | Decisão final sob responsabilidade do coordenador acadêmico." vertex="1">
+          <mxGeometry height="20" width="1090" x="55" y="740" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="containers" name="Nível 2 - Containers">
+    <mxGraphModel dx="1134" dy="912" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;verticalAlign=middle;fontSize=14;fontColor=#142B4A;" value="&lt;b&gt;C4 MODEL | NÍVEL 2&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:26px&quot;&gt;&lt;b&gt;EquivalencIA - Containers&lt;/b&gt;&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#5B6B7E&quot;&gt;Aplicação web, API, dados e serviço externo.&lt;/font&gt;" vertex="1">
+          <mxGeometry height="100" width="1090" x="55" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="coord2" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F7F2;strokeColor=#16836B;strokeWidth=2;fontSize=16;fontColor=#16836B;align=center;verticalAlign=middle;" value="&lt;b&gt;COORDENADOR&lt;/b&gt; · Pessoa" vertex="1">
+          <mxGeometry height="70" width="230" x="95" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="boundary2" parent="1" style="rounded=1;arcSize=14;whiteSpace=wrap;html=1;fillColor=#EDF5FC;strokeColor=#9BBADB;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="425" width="800" x="55" y="255" as="geometry" />
+        </mxCell>
+        <mxCell id="boundarylabel2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;fontSize=14;fontColor=#1769AA;" value="&lt;b&gt;EQUIVALENCIA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="28" width="250" x="78" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E7F3FF;strokeColor=#1769AA;strokeWidth=2;fontSize=16;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=12;" value="&lt;b&gt;APLICAÇÃO WEB&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Frontend EquivalencIA&lt;/b&gt;&lt;br&gt;Solicitações, documentos e revisão dos resultados.&lt;br&gt;&lt;br&gt;&lt;b&gt;React&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="290" x="95" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="api" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#E8F7F2;strokeColor=#16836B;strokeWidth=2;fontSize=16;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=12;" value="&lt;b&gt;API / BACKEND&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;b&gt;Análise curricular&lt;/b&gt;&lt;br&gt;Regras, comparação, extração PDF/DOCX e registro de decisões.&lt;br&gt;&lt;br&gt;&lt;b&gt;Python + FastAPI&lt;/b&gt;" vertex="1">
+          <mxGeometry height="150" width="325" x="485" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#EAF0F7;strokeColor=#61758D;strokeWidth=2;fontSize=15;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=10;" value="&lt;b&gt;BANCO DE DADOS&lt;/b&gt;&lt;br&gt;&lt;br&gt;Estudantes, matrizes, disciplinas e análises.&lt;br&gt;&lt;br&gt;&lt;b&gt;PostgreSQL (Supabase)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="105" width="325" x="485" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ai2" parent="1" style="rounded=1;arcSize=12;whiteSpace=wrap;html=1;fillColor=#F2ECFB;strokeColor=#6941A5;strokeWidth=2;fontSize=15;fontColor=#142B4A;align=center;verticalAlign=middle;spacing=12;" value="&lt;b&gt;SERVIÇO EXTERNO DE IA&lt;/b&gt;&lt;br&gt;&lt;br&gt;Recebe critérios e conteúdo; devolve sugestões.&lt;br&gt;&lt;br&gt;&lt;font color=&quot;#6941A5&quot;&gt;Provedor/modelo a definir&lt;/font&gt;" vertex="1">
+          <mxGeometry height="150" width="230" x="925" y="375" as="geometry" />
+        </mxCell>
+        <mxCell id="use" edge="1" parent="1" source="coord2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#16836B;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="frontend" value="Opera">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="webapi" edge="1" parent="1" source="frontend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#1769AA;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="api" value="HTTPS / JSON">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="apidata" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#61758D;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="db" value="Consulta e grava">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="apiai" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#6941A5;startArrow=block;startFill=1;endArrow=block;endFill=1;fontSize=13;fontColor=#52677E;labelBackgroundColor=#FFFFFF;" target="ai2" value="Dados e sugestões">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note2" parent="1" style="rounded=1;arcSize=8;whiteSpace=wrap;html=1;fillColor=#FFF4DF;strokeColor=#E7C98A;fontSize=13;fontColor=#78500D;align=center;verticalAlign=middle;spacing=10;" value="Extração e automação ainda estão em desenvolvimento. A IA sugere; o coordenador revisa e decide. Armazenamento de arquivos e autenticação: a definir." vertex="1">
+          <mxGeometry height="50" width="1080" x="75" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="foot2" parent="1" style="text;html=1;whiteSpace=wrap;align=left;fontSize=10;fontColor=#5B6B7E;" value="O processamento documental é representado como parte da API; pode ser separado em serviço conforme a implementação." vertex="1">
+          <mxGeometry height="18" width="1080" x="75" y="755" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
